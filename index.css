@@ -1,0 +1,126 @@
+html {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+body,
+p,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  mix-blend-mode: lighten;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - (100vw / 24));
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.container--top {
+  width: 100%;
+  height: calc(100vh - (100vw / 24));
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle {
+  font-size: 3rem;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+
+.middle:first-child {
+  padding-left: 5%;
+}
+
+.middle:last-child {
+  padding-right: 5%;
+}
+
+.hangeul {
+  width: calc(100% / 3);
+  height: 50vh;
+  text-align: center;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hangeul p {
+  font-size: 10rem;
+  color: #ffff;
+}
+
+.box1 {
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+}
+
+.box2 {
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 400;
+}
+
+.box3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+
+.box4 {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+}
+
+.box5 {
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+}
+
+.box6 {
+  font-family: "Grandiflora One", cursive;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  .middle:first-child {
+    padding-left: 1%;
+  }
+
+  .middle:last-child {
+    padding-right: 1%;
+  }
+}
